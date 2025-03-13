@@ -1,0 +1,99 @@
+.userMangement-container {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    width: 100vw;
+    // height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    
+
+    .table-heder,
+    .table-body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        font-size: 20px;
+        width: 95vw;
+        // height: 60px;
+  
+
+        .id,
+        .userName,
+        .email,
+        .contactNo,
+        .type,
+        .activation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 150px;
+            height: 70px;
+            // background-color: rgb(237, 237, 237);
+            // margin: 2px;
+            border-left: 0.5px solid rgba(71, 71, 71, 0.7);
+
+        }
+
+        .detail-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            width: 95vw;
+            border: 0.5px solid rgba(53, 52, 52, 0.619);
+
+            .id,
+            .userName,
+            .email,
+            .contactNo,
+            .type,
+            .activation  {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 150px;
+                height: 70px;
+                // background-color: rgb(237, 237, 237);
+                // margin: 2px;
+                border-left: 0.5px solid rgba(122, 117, 117, 0.914);
+
+                .activate {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 95%;
+                    height: 45%;
+                    border-radius: 50px;
+                    border:solid green 1px;
+                    color: green;
+                    margin-bottom: 2px;
+                    &:hover {
+                        background-color: rgb(11, 224, 11);
+                        color: white;
+                    }
+                }
+                .deactivate {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 95%;
+                    height: 45%;
+                    border-radius: 50px;
+                    border:solid red 1px;
+                    color: red;
+                    &:hover {
+                        background-color: rgb(250, 86, 86);
+                        color: white;
+                    }
+                }
+
+            }
+        }
+    }
+}
